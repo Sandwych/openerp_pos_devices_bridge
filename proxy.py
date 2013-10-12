@@ -23,18 +23,9 @@ def weighting_end():
 def weighting_read_kg():
     return jsonrpcp(10.0)
 
-#@app.route("/pos/weighting_read_kg")
-#def weighting_read_kg():
-#    return jsonify({'result': 10.0})
-#@app.route("/pos/print_receipt")
 @route('/pos/print_receipt')
 def print_receipt():
-    print "-----------------"
-    print "-----------------"
-    try:
-        d = request.args.to_dict()[u'r']
-    except Error as e:
-        print e
+    pass
 
 
 
